@@ -2,6 +2,23 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
 
+It was with a Angular 5 Material app framework.
+
+## To try app
+   Run the Development server `ng serve`
+   Go to the `http://localhost:4200/`
+   You enter your favorite Marvel movie.
+   Click on the Click for answer button.
+   The app responds.
+
+## To change theme
+The default theme used is purple-green.css in the src/styles.css file.
+These are the availabe default themes:
+    deeppurple-amber
+    indigo-pink
+    pink-bluegrey
+    purple-green
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
