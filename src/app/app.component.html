@@ -9,5 +9,24 @@
     <button mat-button>About</button>
     <button mat-button>Services</button>
     <button mat-button>Contact</button>
-    <i class="material-icons" style="font-size:60px;color:green;">face</i>
-  </mat-toolbar-row>
+    <i class="material-icons" style="font-size:48px;color:green;">face</i>
+  </mat-toolbar-row>  
+</mat-toolbar>
+
+    <mat-card>
+      <mat-form-field>
+        <input matInput [(ngModel)]="answer" placeholder="The best marvel movie?">
+      </mat-form-field>
+
+      <br>
+
+      <button mat-raised-button (click)="showAnswer()">Click for answer</button>
+      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card>
+
+    <mat-card *ngIf="answerDisplay">
+      <h1>{{ answerDisplay }}, Right ON!</h1>
+    </mat-card>
+    
+
+
