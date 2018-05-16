@@ -2,28 +2,12 @@
 
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span> ng5mart</span>
-
-    <span class="example-spacer"></span>
-
+    <span>Angular 5 Material</span>
+  
+    <span class="ng5mat-spacer"></span>
+  
     <button mat-button>About</button>
     <button mat-button>Services</button>
     <button mat-button>Contact</button>
     <i class="material-icons" style="font-size:60px;color:green;">face</i>
   </mat-toolbar-row>
-</mat-toolbar>
-
-<mat-card>
-  <mat-form-field>
-    <input matInput [(ngModule)]="answer" placeholder="Who has the best dev tutorials?">
-  </mat-form-fields>
-
-  <br>
-
-  <button mat-raised-button (click)="showAnswer()">Answer me</button>
-  <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
-</mat-card>
-
-<mat-card *ngIf="answerDisplay">
-  <h1>{{ answerDisplay }}, you're damn right.</h1>
-</mat-card>
